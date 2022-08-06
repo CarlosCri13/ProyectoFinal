@@ -39,6 +39,18 @@ namespace ProyectoFinal
             form2.solucion_Estudiantes2 = solucion_Estudiantes;
         }
 
+        private void btnAprovadosL_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            form3.solucion_Estudiantes3 = solucion_Estudiantes;
+        }
 
+        private void btnSuspensoL_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            form4.solucion_Estudiantes4 = solucion_Estudiantes;
+        }
     }
 }

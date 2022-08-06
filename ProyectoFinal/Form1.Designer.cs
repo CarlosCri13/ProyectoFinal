@@ -157,6 +157,7 @@ namespace ProyectoFinal
             this.btnAprovadosL.TabIndex = 13;
             this.btnAprovadosL.Text = "Aprobados";
             this.btnAprovadosL.UseVisualStyleBackColor = true;
+            this.btnAprovadosL.Click += new System.EventHandler(this.btnAprovadosL_Click);
             // 
             // btnSuspensoL
             // 
@@ -166,6 +167,7 @@ namespace ProyectoFinal
             this.btnSuspensoL.TabIndex = 14;
             this.btnSuspensoL.Text = "Suspensos";
             this.btnSuspensoL.UseVisualStyleBackColor = true;
+            this.btnSuspensoL.Click += new System.EventHandler(this.btnSuspensoL_Click);
             // 
             // msktPromedio
             // 
