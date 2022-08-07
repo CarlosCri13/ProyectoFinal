@@ -26,7 +26,7 @@ namespace ProyectoFinal
             estudiantes.Apellido = txtApellidoL.Text;
             estudiantes.Curso = txtCursoL.Text;
             estudiantes.Paralelo = txtParaleloL.Text;
-            estudiantes.Promedio = Convert.ToInt32(msktPromedio.Text);
+            estudiantes.Promedio = Convert.ToInt32(mtxtPromedio.Text);
 
             solucion_Estudiantes.Añadir(estudiantes);
             MessageBox.Show("Datos ingresados correctamente");
@@ -56,10 +56,15 @@ namespace ProyectoFinal
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtNombreL.Text = " ";
-            txtApellidoL.Text = "";
-            txtCursoL.Text = "";
-            txtParaleloL.Text = "";
-            msktPromedio.Text = "";
+            txtApellidoL.Text = " ";
+            txtCursoL.Text = " ";
+            txtParaleloL.Text = " ";
+            mtxtPromedio.Text = " ";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

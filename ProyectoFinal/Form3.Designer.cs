@@ -34,6 +34,7 @@ namespace ProyectoFinal
             this.label1 = new System.Windows.Forms.Label();
             this.dgvAprovados = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAprovados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,9 +43,10 @@ namespace ProyectoFinal
             // 
             this.btnVer.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnVer.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVer.Location = new System.Drawing.Point(344, 119);
+            this.btnVer.Location = new System.Drawing.Point(258, 97);
+            this.btnVer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVer.Name = "btnVer";
-            this.btnVer.Size = new System.Drawing.Size(93, 34);
+            this.btnVer.Size = new System.Drawing.Size(70, 28);
             this.btnVer.TabIndex = 0;
             this.btnVer.Text = "Ver";
             this.btnVer.UseVisualStyleBackColor = false;
@@ -54,9 +56,10 @@ namespace ProyectoFinal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(133, 18);
+            this.label1.Location = new System.Drawing.Point(100, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(553, 45);
+            this.label1.Size = new System.Drawing.Size(437, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Listado Estudiantes Aprobados";
             // 
@@ -64,32 +67,50 @@ namespace ProyectoFinal
             // 
             this.dgvAprovados.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvAprovados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAprovados.Location = new System.Drawing.Point(42, 186);
+            this.dgvAprovados.Location = new System.Drawing.Point(32, 151);
+            this.dgvAprovados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvAprovados.Name = "dgvAprovados";
             this.dgvAprovados.RowHeadersWidth = 51;
             this.dgvAprovados.RowTemplate.Height = 24;
-            this.dgvAprovados.Size = new System.Drawing.Size(690, 229);
+            this.dgvAprovados.Size = new System.Drawing.Size(518, 186);
             this.dgvAprovados.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(64, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 83);
+            this.pictureBox1.Size = new System.Drawing.Size(75, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSalir.Font = new System.Drawing.Font("Trebuchet MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(395, 97);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(70, 28);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvAprovados);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVer);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAprovados)).EndInit();
@@ -105,5 +126,6 @@ namespace ProyectoFinal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvAprovados;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

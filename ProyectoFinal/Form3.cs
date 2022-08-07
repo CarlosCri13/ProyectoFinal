@@ -23,5 +23,10 @@ namespace ProyectoFinal
             dgvAprovados.DataSource = solucion_Estudiantes3.Aprobados();
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

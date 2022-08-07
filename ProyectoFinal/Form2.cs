@@ -23,5 +23,10 @@ namespace ProyectoFinal
             dgvLista.DataSource = solucion_Estudiantes2.Estudiantes;
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
