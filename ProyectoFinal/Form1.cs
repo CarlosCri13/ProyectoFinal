@@ -52,5 +52,14 @@ namespace ProyectoFinal
             form4.Show();
             form4.solucion_Estudiantes4 = solucion_Estudiantes;
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNombreL.Text = " ";
+            txtApellidoL.Text = "";
+            txtCursoL.Text = "";
+            txtParaleloL.Text = "";
+            msktPromedio.Text = "";
+        }
     }
 }

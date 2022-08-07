@@ -29,19 +29,24 @@ namespace ProyectoFinal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.btnLista = new System.Windows.Forms.Button();
             this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLista
             // 
+            this.btnLista.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLista.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLista.Location = new System.Drawing.Point(343, 83);
             this.btnLista.Name = "btnLista";
             this.btnLista.Size = new System.Drawing.Size(107, 46);
             this.btnLista.TabIndex = 0;
             this.btnLista.Text = "Ver Lista";
-            this.btnLista.UseVisualStyleBackColor = true;
+            this.btnLista.UseVisualStyleBackColor = false;
             this.btnLista.Click += new System.EventHandler(this.btnLista_Click);
             // 
             // dgvLista
@@ -56,16 +61,29 @@ namespace ProyectoFinal
             this.dgvLista.Size = new System.Drawing.Size(750, 247);
             this.dgvLista.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(68, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvLista);
             this.Controls.Add(this.btnLista);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -74,5 +92,6 @@ namespace ProyectoFinal
 
         private System.Windows.Forms.Button btnLista;
         private System.Windows.Forms.DataGridView dgvLista;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

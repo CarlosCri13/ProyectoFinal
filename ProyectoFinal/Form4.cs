@@ -22,5 +22,12 @@ namespace ProyectoFinal
         {
             dgvSuspensos.DataSource = solucion_Estudiantes4.Supletorios();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }
