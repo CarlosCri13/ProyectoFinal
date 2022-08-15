@@ -28,5 +28,10 @@ namespace ProyectoFinal
         {
             this.Hide();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
